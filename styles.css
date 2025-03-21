@@ -66,6 +66,7 @@ body {
     border: #A91D3A solid 4px;
     background-color: #0B0808;
     height: calc(100% - 2rem);
+    min-height: 5rem;
     width: 70%;
     padding: 2rem 3rem;
 }
