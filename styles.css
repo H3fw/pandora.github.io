@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #00ff00;
+    font-family: "Space Mono", monospace;
+    font-weight: 500
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.04;
+    pointer-events: none;
+}
+
+.static {
+    background-image: url("./assets/effects/scan.gif");
+}
+
+.scan {
+    background-image: url("./assets/effects/static.gif");
+}
+
+.header {
+    flex: 0 1 auto;
+
+    display: flex;
+
+    width: 100vw;
+    height: fit-content;
+
+    padding: 2rem;
+}
+
+.header-left {
+    width: 30rem;
+
+    margin: auto 3rem auto 0;
+}
+
+#line {
+    height: 2px;
+    background-color: #00ff00;
+    border: none;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.content {
+    flex: 1 1 auto;
+    padding: 2rem 0 0 2rem;
+}
+
+#terminal {
+    border: #00ff00 solid 2px;
+    height: calc(100% - 2rem);
+    width: 80%;
+}
+
+@media (max-width: 970px) {
+    .header {
+        padding: 2rem;
+
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .header-left {
+        width: 30rem;
+    
+        margin: 0 0 2rem 0;
+    }
+    
+    .content {
+        padding: 2rem 0 0 2rem ;
+
+    }
+
+    #terminal {
+        width: calc(100vw - 4rem);
+        height: calc(100% - 2rem);
+    }
+}   
