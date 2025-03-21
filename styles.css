@@ -97,7 +97,7 @@ span {
     }
 
     .header-left {
-        width: 30rem;
+        width: min(100%, 30rem);
     
         margin: 0 0 2rem 0;
     }
